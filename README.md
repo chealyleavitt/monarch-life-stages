@@ -14,7 +14,7 @@ On December 26, 2022, 183,263 research grade observations were exported from the
 [exported data (84.1MB)](https://nextcloud.healyleavitt.com/index.php/s/cAdfwSWLpeWmjY6)
 
 ### CNN Model
-To extract life stage information from geotagged iNaturalist observations, I developed a [CNN model](https://github.com/chealyleavitt/monarch-life-stages/blob/main/1_inception_model.ipynb). I trained this model with approximately 5,000 iNaturalist observations that I hand categorized as either adult, larva, pupa or egg. For the model itself I took a transfer learning approach and used the pre-trained model Inception V3. I chose to freeze the first 200 layers of the Inception V3 model, and train the remaining layers with my categorized butterfly life stage images. With this approach I was able to achieve 97% validation accuracy.
+To extract life stage information from geotagged iNaturalist observations, I developed a [CNN model](https://github.com/chealyleavitt/monarch-life-stages/blob/main/1_inception_model.ipynb). I trained this model with approximately [5,000 iNaturalist observations](https://nextcloud.healyleavitt.com/index.php/s/3wX5EskLpCGEBq3) that I hand categorized as either adult, larva, pupa or egg. For the model itself I took a transfer learning approach and used the pre-trained model Inception V3. I chose to freeze the first 200 layers of the Inception V3 model, and train the remaining layers with my categorized butterfly life stage images. With this approach I was able to achieve 97% validation accuracy.
 
 
 ### Model Application
